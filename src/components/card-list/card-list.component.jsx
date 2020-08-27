@@ -5,8 +5,8 @@ import './card-list.styles.css'
 
 export const CardList = (props) => (
     <div className='card-list'>
-    {props.consoles.map(console => (
-        <Card key={console.id} console={console} />
+    {props.players.map(player => (
+        <Card key={player.id} player={player} />
     ))}
     </div>
 )

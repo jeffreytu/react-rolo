@@ -7,9 +7,11 @@ import './App.css';
 class App extends Component {
 
   constructor() {
+
     super();
+    
     this.state = {
-      consoles: [],
+      players: [],
       searchField: '',
     }
   }
@@ -17,10 +19,14 @@ class App extends Component {
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
-    .then(users => this.setState({consoles: users}))
+    .then(users => this.setState({players: users}))
   }
 
   render() {
+
+    const { players, searchField } = this.state;
+    const filteredPlayers = players.filter(player => player.name.toLowerCase().includes(searchField.toLowerCase()))
+
     return (
       <div className="App">
         <input
@@ -28,7 +34,7 @@ class App extends Component {
           placeholder='search players' 
           onChange={e => this.setState({ searchField: e.target.value })}
         />
-        <CardList consoles={this.state.consoles} />
+        <CardList players={filteredPlayers} />
       </div>
     );
   }
