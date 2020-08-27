@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d077e156130eaf79d446a0adee3c8a22",
+    "revision": "72b3927838813927442350747a3425c3",
     "url": "/react-rolo/index.html"
   },
   {
-    "revision": "4f08bebd1a9734b0e810",
-    "url": "/react-rolo/static/css/main.12987ac3.chunk.css"
+    "revision": "a654e8db4d5b896deb1d",
+    "url": "/react-rolo/static/css/main.f2c1c099.chunk.css"
   },
   {
     "revision": "154189d82e8f60ef47f4",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-rolo/static/js/2.0212bbd3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4f08bebd1a9734b0e810",
+    "revision": "a654e8db4d5b896deb1d",
     "url": "/react-rolo/static/js/main.cb3bb8e9.chunk.js"
   },
   {
